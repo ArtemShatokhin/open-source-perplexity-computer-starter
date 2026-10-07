@@ -1,0 +1,59 @@
+# kortix.yaml
+# Kortix is the open source AI Management System. This manifest is the machine,
+# connector, rule and trigger layer of the project; the agents and skills are
+# markdown files beside it. Every line here is a file you own, diff and roll back.
+#
+# This file never holds a secret. Model keys are read from the host environment
+# by name, and connector credentials are brokered server-side so they never
+# enter a session's machine.
+
+version: 2
+
+project:
+  name: open-source-perplexity-computer-starter
+  description: >-
+    A starter Kortix project for teams evaluating an open source
+    Perplexity Computer alternative they can self-host.
+
+# Any model, your keys, chosen per agent, per session or per message.
+model:
+  provider: anthropic
+  name: claude-sonnet
+  api_key_env: ANTHROPIC_API_KEY
+  fallback:
+    provider: openai
+    name: gpt-5
+    api_key_env: OPENAI_API_KEY
+
+agents:
+  research-lead:
+    file: agents/research-lead.md
+    model:
+      provider: anthropic
+      name: claude-sonnet
+    skills:
+      - cite-sources
+    permissions:
+      default: ask
+
+skills:
+  - slug: cite-sources
+    path: skills/cite-sources
+
+connectors:
+  mode: all
+  # Credentials for every connector are brokered server-side. No token or key
+  # is stored in this repo, and none is passed into a session's machine.
+
+runtime:
+  harness: opencode
+  sandbox:
+    isolated: true
+    per_session: true
+
+# Triggers start a session with nobody asking. One example, commented out:
+# triggers:
+#   - slug: daily-research-digest
+#     type: cron
+#     cron: "0 9 * * 1-5"
+#     prompt: Summarize yesterday's sources and open a change request with the digest.
