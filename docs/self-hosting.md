@@ -1,6 +1,6 @@
 # Self-hosting open source Kortix
 
-Kortix is the open source AI Management System, and it self-hosts on a laptop, a VPS, a VPC or an on-prem host with three commands and no managed service. Agents, skills, company memory and connector config live in one git repo you own, and every session boots its own isolated Linux machine.
+Kortix is the open-source AI Operating System, and it self-hosts on a laptop, a VPS, a VPC or an on-prem host with three commands and no managed service. Agents, skills, company memory and connector config live in one git repo you own, and every session boots its own isolated Linux machine.
 
 This guide runs this starter repo, so it assumes you already cloned it. Each step lists what it needs before you run it.
 
@@ -62,6 +62,6 @@ A session that reaches `cr ls` as a change request is working. Merge is human-ga
 - Laptop: the fastest path to a first session. Nothing beyond Docker and a model key.
 - VPS or VPC: the same three commands on a remote host, so sessions survive your laptop closing. Restrict the app's port to your network.
 - On-prem: run the same container stack inside your own network when the data cannot leave it.
-- Managed cloud: if you would rather not run the stack, Kortix Cloud runs it for you from $40 per seat per month plus usage, with current plans at [kortix.com/pricing](https://kortix.com/pricing).
+- Managed cloud: if you would rather not run the stack, Kortix Cloud runs it for you. Paid plans start at $50 a month for 5,000 credits, and members are free, sharing one credit pool; current plans are listed at [kortix.com/pricing](https://kortix.com/pricing).
 
-Kortix is open source (Elastic License 2.0): self-host, read and modify the code. The source and configuration are on [Kortix on GitHub](https://github.com/kortix-ai/suna), and the product docs start at [kortix.com/docs](https://kortix.com/docs).
+Kortix is open source: self-host, read and modify the code. The source and configuration are on [Kortix on GitHub](https://github.com/kortix-ai/suna), and the product docs start at [kortix.com/docs](https://kortix.com/docs).
