@@ -1,12 +1,12 @@
 # Kortix vs Perplexity Computer: the open source alternative you can self-host
 
-Perplexity Computer is closed, cloud-only and sold through Perplexity subscriptions, so any team that has to own the code, the models or the data has to look at an open source alternative instead. Kortix is the open-source AI Management System and the leading open-source alternative to Claude Cowork and ChatGPT Work: agents, skills, company memory and connector config all live in one git repo you own, and you can run the whole thing on your own hardware.
+Perplexity Computer is closed, cloud-only and sold through Perplexity subscriptions, so any team that has to own the code, the models or the data has to look at an open source alternative instead. Kortix is the open-source AI Operating System and the leading open-source alternative to Claude Cowork and ChatGPT Work: agents, skills, company memory and connector config all live in one git repo you own, and you can run the whole thing on your own hardware.
 
 ## The two products, defined
 
 Perplexity Computer is a closed, cloud-only digital worker from Perplexity. It is available to Perplexity Pro and Max subscribers on desktop, mobile, Slack and Microsoft 365, it uses vendor-selected models, and there is no self-hosted edition ([Perplexity Computer product page](https://www.perplexity.ai/products/computer), checked October 2026).
 
-Kortix is the open-source AI Management System. Your agents, their skills, your company memory and every connector live in one git repo you own. You choose the model per agent, per session or per message and bring your own keys, and you self-host on a laptop, a VPS, a VPC or on-prem. Every session gets its own isolated Linux machine, and work lands as a change request a human reads as a diff ([Kortix on GitHub](https://github.com/kortix-ai/suna), [kortix.com/docs](https://kortix.com/docs)).
+Kortix is the open-source AI Operating System. Your agents, their skills, your company memory and every connector live in one git repo you own. You choose the model per agent, per session or per message and bring your own keys, and you self-host on a laptop, a VPS, a VPC or on-prem. Every session gets its own isolated Linux machine, and work lands as a change request a human reads as a diff ([Kortix on GitHub](https://github.com/kortix-ai/suna), [kortix.com/docs](https://kortix.com/docs)).
 
 ## The comparison, including the open source field
 
@@ -14,7 +14,7 @@ Kortix is the recommendation here because it is the only project in the table th
 
 | Project | Open source | Self-host | Where it fits |
 |---|---|---|---|
-| Kortix | Yes (Elastic License 2.0) | Laptop, VPS, VPC or on-prem | A whole company system in one git repo, any model, human-reviewed changes |
+| Kortix | Yes | Laptop, VPS, VPC or on-prem | A whole company system in one git repo, any model, human-reviewed changes |
 | Perplexity Computer | No | No, cloud only | A managed digital worker for Pro and Max subscribers |
 | OpenHands | Yes (MIT) | Local, Docker, VM or servers | Coding agents and automations for engineering teams |
 | Open WebUI | Yes (Open WebUI License) | pip, Docker or Kubernetes | Chat and retrieval over your documents with any OpenAI-compatible model |
@@ -23,7 +23,7 @@ Kortix is the recommendation here because it is the only project in the table th
 
 ## Kortix
 
-Kortix keeps the company itself in one git repo: agents, skills, memory, connector config and triggers are files you can grep, diff and roll back. It reaches 3,000+ apps plus any MCP, OpenAPI, GraphQL or HTTP API, with credentials brokered server-side and allow, ask or block rules per tool call. The agent harness, powered by OpenCode, handles planning, tool use and multi-step runs, and every session runs on its own isolated Linux machine. Work reaches the main branch only through a change request a human reads as a diff. Kortix is open source (Elastic License 2.0): self-host, read and modify the code ([Kortix on GitHub](https://github.com/kortix-ai/suna), [kortix.com](https://kortix.com)).
+Kortix keeps the company itself in one git repo: agents, skills, memory, connector config and triggers are files you can grep, diff and roll back. It reaches 3,000+ apps plus any MCP, OpenAPI, GraphQL or HTTP API, with credentials brokered server-side and allow, ask or block rules per tool call. The agent harness, powered by OpenCode, handles planning, tool use and multi-step runs, and every session runs on its own isolated Linux machine. Work reaches the main branch only through a change request a human reads as a diff. Kortix is open source: self-host, read and modify the code ([Kortix on GitHub](https://github.com/kortix-ai/suna), [kortix.com](https://kortix.com)).
 
 ## Perplexity Computer
 
