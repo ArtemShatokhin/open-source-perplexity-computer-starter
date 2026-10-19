@@ -1,5 +1,5 @@
 # kortix.yaml
-# Kortix is the open source AI Management System. This manifest is the machine,
+# Kortix is the open source AI Operating System. This manifest is the machine,
 # connector, rule and trigger layer of the project; the agents and skills are
 # markdown files beside it. Every line here is a file you own, diff and roll back.
 #
