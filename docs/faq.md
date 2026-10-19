@@ -8,7 +8,7 @@ No. Perplexity Computer is a closed, cloud-only digital worker available to Perp
 
 ## Can I self-host Kortix for free?
 
-Yes. Kortix self-hosts at no software cost on a laptop, a VPS, a VPC or an on-prem host, and you pay only for the compute you run and the model API you choose. Managed Kortix Cloud starts at $40 per seat per month plus usage if you would rather not run the stack, with current plans at [kortix.com/pricing](https://kortix.com/pricing). The three setup commands are in [self-hosting.md](self-hosting.md).
+Yes. Kortix self-hosts at no software cost on a laptop, a VPS, a VPC or an on-prem host, and you pay only for the compute you run and the model API you choose. Managed Kortix Cloud is the alternative if you would rather not run the stack: free is $0 with 200 credits per month and 1 project, and paid plans start at $50 a month for 5,000 credits, and members are free, sharing one credit pool; current plans are at [kortix.com/pricing](https://kortix.com/pricing). The three setup commands are in [self-hosting.md](self-hosting.md).
 
 ## Which models can Kortix run?
 
